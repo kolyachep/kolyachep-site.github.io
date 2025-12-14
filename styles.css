@@ -1,0 +1,42 @@
+/* Общие стили для всего сайта */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #000; /* Чёрный цвет текста */
+    background: url('background.jpeg') center/cover fixed no-repeat;
+}
+
+/* Для заголовков и текста — сохраняем Arial, чёрный */
+h1, h2, p, font {
+    font-family: Arial, sans-serif !important;
+    color: #000 !important;
+}
+
+/* Убираем подчёркивание у ссылок в address */
+address a {
+    text-decoration: none;
+}
+
+/* Для форм (если нужно) */
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px; 
+}
