@@ -30,13 +30,13 @@ const db = new sqlite3.Database('./users.db', (err) => {
 });
 
 // Маршруты для HTML-страниц
-app.get('/', (req, res) => res.sendFile(path.join(__dirname, 'compsite', 'index.html')));
-app.get('/software', (req, res) => res.sendFile(path.join(__dirname, 'compsite', 'software.html')));
-app.get('/glossary', (req, res) => res.sendFile(path.join(__dirname, 'compsite', 'glossary.html')));
-app.get('/hardware', (req, res) => res.sendFile(path.join(__dirname, 'compsite', 'hardware.html')));
-app.get('/anketa', (req, res) => res.sendFile(path.join(__dirname, 'compsite', 'anketa.html')));
-app.get('/login', (req, res) => res.sendFile(path.join(__dirname, 'compsite', 'login.html')));
-app.get('/dashboard', (req, res) => res.sendFile(path.join(__dirname, 'compsite', 'dashboard.html'))); // Добавлен маршрут для dashboard
+app.get('/', (req, res) => res.sendFile(path.join(__dirname, 'index.html')));
+app.get('/software', (req, res) => res.sendFile(path.join(__dirname, 'software.html')));
+app.get('/glossary', (req, res) => res.sendFile(path.join(__dirname, 'glossary.html')));
+app.get('/hardware', (req, res) => res.sendFile(path.join(__dirname, 'hardware.html')));
+app.get('/anketa', (req, res) => res.sendFile(path.join(__dirname, 'anketa.html')));
+app.get('/login', (req, res) => res.sendFile(path.join(__dirname, 'login.html')));
+app.get('/dashboard', (req, res) => res.sendFile(path.join(__dirname, 'dashboard.html'))); // Добавлен маршрут для dashboard
 
 // Регистрация
 app.post('/register', (req, res) => {
